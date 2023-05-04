@@ -9,7 +9,7 @@ in under 6 minutes.
 
 # dschibster's adjustment 
 
-My adjustments to the script that @snorf made was to include the possibility to query from Tasks, which is problematic because Tasks can't be the element of a "LinkedEntity IN ()" query. That's why this (admittedly hacky) solution constructs the Query in chunks of 200 records with a big concatenation of "Id1 OR Id2 OR Id3". 
+My adjustments to the script that [snorf](https://github.com/snorf) made was to adjust the script specifically to query from Tasks, which is problematic because Tasks can't be the element of a "LinkedEntity IN ()" query. That's why this (admittedly hacky) solution constructs the Query in chunks of 200 records with a big concatenation of "Id1 OR Id2 OR Id3". 
 
 In a smoke test done for a customer we were able to download files from over 1000 tasks.
 
